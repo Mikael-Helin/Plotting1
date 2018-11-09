@@ -1,0 +1,5 @@
+myt<-read.table("./mydata.txt",header=TRUE,sep=";",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
+hist(myt[,3],breaks=12,main="Global Active Power",xlab="Global Active Power (kilowatts)",col="red")
+unlink("./plot1.png") #need to delete since fails to overwrite in next step (Linux Debian 9)
+dev.copy(png,filename="./plot1.png",width=480,height=480)
+dev.off()

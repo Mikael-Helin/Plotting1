@@ -1,0 +1,6 @@
+library(lubridate)
+myt<-read.table("./mydata.txt",header=TRUE,sep=";",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"))
+plot(dmy_hms(paste(myt[,1],myt[,2],sep=" ")),myt[,3],main="",ylab="Global Active Power (kilowatts)",xlab="",type="l")
+unlink("./plot2.png") #need to delete since fails to overwrite in next step (Linux Debian 9)
+dev.copy(png,filename="./plot2.png",width=480,height=480)
+dev.off()
