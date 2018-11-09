@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Plotting1
 
 I find R to be a slow language or maybe I do not know the tricks. Anyways, the data file household_power_consumption.txt is too large, bogs down the speed of my computer.
@@ -20,4 +20,4 @@ plot4.png
 
 =======
 # Plotting1
->>>>>>> 00ec431a778e3db9adb26ed838d1453f8b7693a7
+
